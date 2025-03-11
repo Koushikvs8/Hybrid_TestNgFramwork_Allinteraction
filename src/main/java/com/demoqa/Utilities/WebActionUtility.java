@@ -70,7 +70,7 @@ public class WebActionUtility {
 		}
 	}
 	
-	//✅ SedKeys
+	//✅ SendKeys
 	
 	public void sendKeys(WebElement element ,String text)
 	{
