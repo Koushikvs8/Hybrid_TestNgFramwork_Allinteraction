@@ -27,7 +27,7 @@ public class BaseClass {
    {
 	   loadConfigFile(); 
    }
-
+  // ✅ Execute before each @Test method
     @BeforeMethod
     public void setUp() {
     	// Load config file once
@@ -37,7 +37,10 @@ public class BaseClass {
             launchTheUrl();      // Load URL
         }
     }
+    
 
+	
+   // ✅ Execute after each @Test method
     @AfterMethod
     public void tearDown() {
         if (driver.get() != null) {
