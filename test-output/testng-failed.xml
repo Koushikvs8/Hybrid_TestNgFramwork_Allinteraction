@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.demoqa.TestBase.BaseClass">
+      <class name="com.demoqa.TestCases.UserLogin">
         <methods>
-          <include name="launchTheUrl"/>
           <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="validate_form_with_validData" invocation-numbers="0 2"/>
         </methods>
-      </class> <!-- com.demoqa.TestBase.BaseClass -->
+      </class> <!-- com.demoqa.TestCases.UserLogin -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
