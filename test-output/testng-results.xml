@@ -1,11 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-10T15:18:01 IST" name="Default suite" finished-at="2025-03-10T15:18:01 IST" duration-ms="15">
+  <suite started-at="2025-03-11T12:41:44 IST" name="Default suite" finished-at="2025-03-11T12:42:26 IST" duration-ms="42021">
     <groups>
     </groups>
-    <test started-at="2025-03-10T15:18:01 IST" name="Default test" finished-at="2025-03-10T15:18:01 IST" duration-ms="15">
+    <test started-at="2025-03-11T12:41:44 IST" name="Default test" finished-at="2025-03-11T12:42:26 IST" duration-ms="42021">
+      <class name="com.demoqa.TestCases.UserLogin">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:41:44 IST" name="setUp" finished-at="2025-03-11T12:41:53 IST" duration-ms="9181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validate_form_with_validData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:41:53 IST" name="validate_form_with_validData" data-provider="logindata" finished-at="2025-03-11T12:42:00 IST" duration-ms="6999" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[koushik]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[koushik@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[657483920]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[davanadere]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[monday]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_form_with_validData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:00 IST" name="tearDown" finished-at="2025-03-11T12:42:00 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:00 IST" name="setUp" finished-at="2025-03-11T12:42:06 IST" duration-ms="5378" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validate_form_with_validData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:06 IST" name="validate_form_with_validData" data-provider="logindata" finished-at="2025-03-11T12:42:13 IST" duration-ms="6852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[swathi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[swathi@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[557483920]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[darwada]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[female]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[sunday]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_form_with_validData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:13 IST" name="tearDown" finished-at="2025-03-11T12:42:13 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:13 IST" name="setUp" finished-at="2025-03-11T12:42:19 IST" duration-ms="5788" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validate_form_with_validData(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:19 IST" name="validate_form_with_validData" data-provider="logindata" finished-at="2025-03-11T12:42:26 IST" duration-ms="6876" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Ramesh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Ramesh@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[957483920]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Bangalore]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[male]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[tuesday]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validate_form_with_validData -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.demoqa.TestCases.UserLogin@434a63ab]" started-at="2025-03-11T12:42:26 IST" name="tearDown" finished-at="2025-03-11T12:42:26 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.demoqa.TestCases.UserLogin -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
