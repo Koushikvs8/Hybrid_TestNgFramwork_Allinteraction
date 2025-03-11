@@ -19,7 +19,7 @@ import org.testng.annotations.Test;
 
 public class BaseClass {
   
-	public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
+    public static ThreadLocal<WebDriver> driver = new ThreadLocal<>();  // ✅ ThreadLocal for the Thread Safe Execution
     private static Properties properties;
   
     // Load config file once
