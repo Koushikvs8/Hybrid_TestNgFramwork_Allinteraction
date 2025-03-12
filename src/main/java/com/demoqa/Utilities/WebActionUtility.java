@@ -1,9 +1,13 @@
 package com.demoqa.Utilities;
 
+import java.util.Iterator;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.Select;
 
 import com.demoqa.PageObjects.BasePage;
 
@@ -96,7 +100,22 @@ public class WebActionUtility {
 					}
 				}
 	}
-	
+	//✅ dropdownSelecter
+
+	public void dropdownselectByText(WebElement element , String  option) throws InterruptedException
+	{
+		Select mydropdown= new Select(element);
+		mydropdown.selectByVisibleText(option);
+		Thread.sleep(2000);
+		  List<WebElement> options= mydropdown.getOptions();
+		   Iterator<WebElement> itrator=options.iterator();
+		   while(itrator.hasNext())
+		   {      
+		    mydropdown.selectByVisibleText(itrator.next().getText());
+		   }
+		
+	}
+
 	
 	//✅ findelementBy
 	public WebElement findelement(By locater)
@@ -141,8 +160,27 @@ public class WebActionUtility {
 			    js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", element);
 			}
 		}
-
-		
+		public void scrollToElementInsideSection(WebElement section, WebElement targetElement) {
+		    JavascriptExecutor js = (JavascriptExecutor) driver;
+		    js.executeScript(
+		        "arguments[0].scrollTop = arguments[1].offsetTop - arguments[0].offsetTop;", 
+		        section, targetElement
+		    );
+		}
+		public WebElement jseScrollIntoViewWithCenter(WebElement element)
+		{
+			
+			js.executeScript(
+				    "const element = arguments[0];" +
+				    	    "const rect = element.getBoundingClientRect();" +
+				    	    "const absoluteElementTop = rect.top + window.pageYOffset;" +
+				    	    "const middle = absoluteElementTop - (window.innerHeight / 2);" +
+				    	    "window.scrollTo({top: middle, behavior: 'smooth'});", 
+				    	    element);
+			
+			return element;
+			
+		}
 	
 	
 }
